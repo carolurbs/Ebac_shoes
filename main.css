@@ -1,0 +1,354 @@
+/*#region Mobile*/
+
+@media screen and (max-width: 640px){
+    *
+    {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    }
+    
+    body
+    {
+        background-color: #eaeaea;
+    }
+
+    header
+    {
+       background-color: blue; 
+       max-width: 640px;
+       padding: 10px;
+       margin-bottom: 10px;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+
+    }
+    header h1{
+        color: #eaeaea;
+        max-width: 4ch;
+        font-style: italic;
+        text-transform: uppercase;
+
+    }
+    header ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        margin-left: 50px;
+    }
+    header li{
+        margin-bottom: 5px;
+    }
+    header a{
+        text-decoration: none;
+        color: #eaeaea;
+        font-weight: 700;
+        font-size: 1em;   
+    }
+    header a:hover{
+        text-decoration: underline;      
+    }
+    .sobre
+    {
+        display: grid;
+        grid-template-columns: repeat(1, 98%);
+        flex-wrap: wrap;
+        column-gap: 2%;
+        
+    }
+
+    h2{
+        margin: 5px 50px;
+        border-bottom: 2px solid blue;
+        color: #6969d1;
+        padding-bottom: 10px;
+        font-style: italic;
+
+    }
+    .sobre p{
+        max-width: 50ch;
+        margin: 10px 50px
+    }
+    img{
+        height: 300px;
+        margin: 10px;
+        border-radius: 10%;
+        margin: 10px 50px;
+    }
+    .produtos ul{
+        display:grid;
+        grid-template-columns: repeat(1, 98%);
+        column-gap: 2%;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    h3{
+        margin: 10px 50px;
+    }
+
+    .produtos p{
+        font-weight: 600;
+        margin: 10px 50px;
+    }  
+
+    button{
+
+        padding:5px 30px;
+        margin: 10px 80px;
+        font-weight: 700;
+        font-size: 1em;
+        background-color: blue;
+        color: #eaeaea;
+        border: transparent;
+        border-radius: 5%;
+    }
+    button:hover
+    {
+        background-color: blueviolet;
+    }
+}
+
+/*#endregion */
+
+/*#region Tablet*/
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    *
+    {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    }
+    body
+    {
+        background-color: #eaeaea;
+    }
+
+    header
+    {
+       background-color: blue; 
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-between;
+       max-width: 1023px;
+    }
+
+    header h1{
+        color: #eaeaea;
+        font-style: italic;
+        text-transform: uppercase;
+        margin: 10px 50px;
+
+    }
+    header ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        margin-right: 50px;
+    }
+    header li{
+        margin: 10px;
+    }
+    header a{
+        text-decoration: none;
+        color: #eaeaea;
+        font-weight: 700;
+        font-size: 1em;   
+    }
+    header a:hover{
+        text-decoration: underline;      
+    }
+    .sobre
+    {
+        display: grid;
+        grid-template-columns: repeat(1, 98%);
+        column-gap: 2%;  
+    }
+
+    h2{
+        margin: 5px 50px;
+        border-bottom: 2px solid blue;
+        color: #6969d1;
+        padding-bottom: 10px;
+        font-style: italic;
+
+    }
+    .sobre p{
+        max-width: 70ch;
+        margin: 10px 50px
+    }
+   .sobre img{
+        height: 400px;
+        margin: 10px;
+        border-radius: 10%;
+        margin: 20px 100px 10px;
+    }
+    .produtos ul{
+        display:grid;
+        grid-template-columns: repeat(2, 49.5%);
+        column-gap: 1%;
+        overflow-x:hidden;
+        max-width: 1023px;
+        flex-wrap: wrap;
+        list-style: none;
+        margin-top: 20px;
+    }
+    h3{
+        margin: 10px 50px;
+    }
+
+    .produtos p{
+        font-weight: 600;
+        margin: 10px 50px;
+    }  
+  .produtos img{
+        height: 250px;
+        margin: 10px;
+        border-radius: 10%;
+        margin: 10px 50px;
+    }
+
+    button{
+
+        padding:5px 30px;
+        margin: 10px 50px;
+        font-weight: 700;
+        font-size: 1em;
+        background-color: blue;
+        color: #eaeaea;
+        border: transparent;
+        border-radius: 5%;
+    }
+    button:hover
+    {
+        background-color: blueviolet;
+    }
+}
+
+/*#endregion */
+
+/*#region PC*/
+@media screen and (min-width: 1024px) {
+    *
+    {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    }
+    body
+    {
+        background-color: #eaeaea;
+        overflow-x: hidden;
+    }
+
+    header
+    {
+       background-color: blue; 
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-between;
+      
+    }
+
+    header h1{
+        color: #eaeaea;
+        font-style: italic;
+        text-transform: uppercase;
+        margin: 10px 250px;
+
+    }
+    header ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        margin-right: 250px;
+    }
+    header li{
+        margin: 10px;
+    }
+    header a{
+        text-decoration: none;
+        color: #eaeaea;
+        font-weight: 700;
+        font-size: 1em;   
+    }
+    header a:hover{
+        text-decoration: underline;      
+    }
+    .sobre
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 49.5%);
+        column-gap: 2%;  
+    }
+
+    h2{
+        margin: 20px 50px 10px 10px;
+        
+        border-bottom: 2px solid blue;
+        color: #6969d1;
+        padding-bottom: 10px;
+        font-style: italic;
+
+    }
+    .sobre p{
+        max-width: 70ch;
+        margin: 10px 5px;
+    }
+   .sobre img{
+        height: 400px;
+        margin: 10px;
+        border-radius: 10%;
+        margin: 20px 5px 10px 200px;
+    }
+    .produtos ul{
+        display:grid;
+        grid-template-columns: repeat(4, 24.75%);
+        column-gap: 1%;
+        overflow-x:hidden;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 20px;
+    }
+    h3{
+        margin: 10px 50px;
+    }
+
+    .produtos p{
+        font-weight: 600;
+        margin: 10px 50px;
+    }  
+  .produtos img{
+        height: 250px;
+        margin: 10px;
+        border-radius: 10%;
+        margin: 10px 50px;
+    }
+
+    button{
+
+        padding:5px 30px;
+        margin: 10px 50px;
+        font-weight: 700;
+        font-size: 1em;
+        background-color: blue;
+        color: #eaeaea;
+        border: transparent;
+        border-radius: 5%;
+    }
+    button:hover
+    {
+        background-color: blueviolet;
+    }
+
+
+}
+/*#endregion */
